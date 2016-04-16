@@ -15,6 +15,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
+        <provider
+            android:authorities="app.com.ttins.contentproviderexample.peopledatabase"
+            android:name=".data.PeopleProvider"
+            android:exported="false"/>
+
     </application>
 
 </manifest>
