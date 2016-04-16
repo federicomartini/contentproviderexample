@@ -9,7 +9,7 @@ import app.com.ttins.contentproviderexample.R;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements MainMVP.RequiredViewOps {
 
     @Bind(R.id.button) Button mButton;
     @Bind(R.id.textView_first_name) TextView mFirstNameTextView;
@@ -21,6 +21,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
+    }
+
+    @Override
+    public void onShowQueryResult() {
+        //TODO: insert here data for text views
     }
 
 

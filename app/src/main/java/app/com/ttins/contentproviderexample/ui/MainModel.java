@@ -1,7 +1,9 @@
 package app.com.ttins.contentproviderexample.ui;
 
-/**
- * Created by MartiniF on 16/04/2016.
- */
-public class MainModel {
+public class MainModel implements MainMVP.ModelOps {
+
+    @Override
+    public void queryRandomData() {
+        //TODO: Insert here the code to handle the query requested from the view
+    }
 }
